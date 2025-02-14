@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Solid Finish Art - Profesjonalne Usługi Budowlane</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            /* Resetowanie domyślnych stylów */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+            }
+
+            /* Styl dla nagłówka */
+            header {
+                background-color: #333;
+                padding: 15px 0;
+                text-align: center;
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            nav ul li {
+                display: inline;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                padding: 10px 15px;
+                transition: color 0.3s;
+            }
+
+            nav ul li a:hover {
+                color: #f1c40f;
+            }
+
+            /* Logo */
+            .logo {
+                width: 150px;
+                height: auto;
+                display: block;
+                margin: 0 auto 10px auto;
+                padding: 10px 0;
+            }
+
+            /* Sekcje */
+            section {
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            h2 {
+                margin-bottom: 20px;
+                color: #333;
+            }
+
+            /* Styl dla listy usług */
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            ul li {
+                margin-bottom: 10px;
+            }
+
+            /* Galeria obrazów */
+            .gallery {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .gallery img {
+                width: 300px;
+                height: auto;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s;
+            }
+
+            .gallery img:hover {
+                transform: scale(1.05);
+            }
+
+            /* Formularz kontaktowy */
+            form {
+                max-width: 400px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            input {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            button {
+                background-color: #333;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+            button:hover {
+                background-color: #f1c40f;
+            }
+
+            /* Stopka */
+            footer {
+                text-align: center;
+                padding: 20px;
+                background-color: #333;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Nawigacja -->
+        <header>
+            <nav>
+                <img
+                    src="images/logo.png"
+                    alt="Solid Finish Art Logo"
+                    class="logo"
+                />
+                <ul>
+                    <li><a href="#home">Strona Główna</a></li>
+                    <li><a href="#uslugi">Usługi</a></li>
+                    <li><a href="#realizacje">Realizacje</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Strona Główna -->
+        <section id="home">
+            <h1>Witamy w Solid Finish Art</h1>
+            <p>Profesjonalne usługi budowlane - wnętrza i remonty obiektów.</p>
+            <p>
+                Jesteśmy doświadczoną firmą, która oferuje usługi budowlane na
+                najwyższym poziomie.
+            </p>
+        </section>
+
+        <!-- Usługi -->
+        <section id="uslugi">
+            <h2>Nasze usługi</h2>
+            <ul>
+                <li>
+                    <strong>Wykończenia wnętrz:</strong> Kompleksowe usługi
+                    konserwacyjne dla mieszkań i biur.
+                </li>
+                <li>
+                    <strong>Remonty i adaptacje:</strong> Odświeżenie wnętrz
+                    oraz adaptacja przestrzeni.
+                </li>
+                <li>
+                    <strong>Prace tynkarskie i malarskie:</strong> Profesjonalne
+                    tynkowanie i malowanie ścian oraz sufitów.
+                </li>
+                <li>
+                    <strong>Prace glazurowe:</strong> Układanie płytek, mozaiki
+                    i kamienia dekoracyjnego.
+                </li>
+                <li>
+                    <strong>Elektryka:</strong> Instalacje elektryczne,
+                    modernizacje i naprawy.
+                </li>
+                <li>
+                    <strong>Hydraulika:</strong> Montaż i naprawa instalacji
+                    wodno-kanalizacyjnych.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Realizacje -->
+        <section id="realizacje">
+            <h2>Nasze realizacje</h2>
+            <p>
+                Odwiedź naszą galerię działań i sprawdź, jak wyglądają nasze
+                realizacje.
+            </p>
+            <div class="gallery">
+                <img src="images/image1.png" alt="Projekt 1" />
+                <img src="images/image2.png" alt="Projekt 2" />
+                <img src="images/image3.png" alt="Projekt 3" />
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Skontaktuj się z nami, aby omówić swój projekt budowlany!</p>
+            <form>
+                <label for="name">Imię i nazwisko:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    value="Viktor Tikishan"
+                />
+
+                <label for="email">E-mail:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    value="solidfinishart@gmail.com"
+                />
+
+                <label for="phone">Telefon:</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value="+48 533 401 150"
+                />
+            </form>
+            <p>Adres: ul. Przykładowa 123, 00-000 Warszawa</p>
+            <p>Telefon: +48 533 401 150</p>
+            <p>E-mail: solidfinishart@gmail.com</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Solid Finish Art - Wszystkie prawa zastrzeżone</p>
+        </footer>
+    </body>
+</html>
